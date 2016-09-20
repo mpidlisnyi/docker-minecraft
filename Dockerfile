@@ -10,5 +10,5 @@ RUN chmod +x /entrypoint
 ENTRYPOINT [ "/entrypoint" ]
 EXPOSE 25565
 WORKDIR /data
-CMD ["java", "-Xmx1024M", "-Xms1024M", "-jar", "/minecraft_server.jar", "nogui"]
+CMD ["java"]
 
