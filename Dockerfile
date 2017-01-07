@@ -1,6 +1,6 @@
 FROM openjdk:8
 
-ENV MINECRAFT_VERSION=1.11
+ENV MINECRAFT_VERSION=1.11.2
 LABEL minecraft_server="${MINECRAFT_VERSION}"
 
 RUN mkdir -p /data
