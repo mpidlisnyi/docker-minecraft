@@ -4,7 +4,7 @@ ENV MINECRAFT_VERSION=1.14
 LABEL minecraft_server="${MINECRAFT_VERSION}"
 
 RUN mkdir -p /data
-ADD https://s3.amazonaws.com/Minecraft.Download/versions/${MINECRAFT_VERSION}/minecraft_server.${MINECRAFT_VERSION}.jar /minecraft_server.jar
+ADD https://launcher.mojang.com/v1/objects/f1a0073671057f01aa843443fef34330281333ce/server.jar /minecraft_server.jar
 COPY entrypoint.sh /entrypoint
 RUN chmod +x /entrypoint
 ENTRYPOINT [ "/entrypoint" ]
