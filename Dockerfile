@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:16
 
 ENV MINECRAFT_VERSION=1.17.1
 LABEL minecraft_server="${MINECRAFT_VERSION}"
